@@ -44,8 +44,8 @@ public class Hello {
                   		 String tabletext = links.get(i).getText();
                   		 System.out.println(tabletext);
                       }
-                  	 else { System.out.println("There is no table related link title");}
-     	         } 
+                  	// else { System.out.println("There is no table related link title");}
+     	        } 
      	         
      	         
      	               List<WebElement> addlinks=driver.findElements(By.xpath("//input[@name=\"addToCartButton\"]"));
@@ -55,8 +55,7 @@ public class Hello {
      	               for(int j=0; j<addsize; j++) {
      	            	  addlinks.get(addsize-1).click(); 
      	            	  Thread.sleep(10000);
-     	             //   Alert alert = driver.switchTo().alert();
-     	               //  alert.dismiss();
+     	            
      	            	  driver.findElement(By.xpath("//span[@id=\"cartItemCountSpan\"]")).click();
      	            	  driver.findElement(By.name("quantityButtonDown")).click();
      	            	 driver.close();
@@ -64,5 +63,5 @@ public class Hello {
               	 
      	       
 	}
+	}
 
-}
