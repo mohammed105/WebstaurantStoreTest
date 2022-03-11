@@ -59,7 +59,7 @@ public class Hello {
      	               //  alert.dismiss();
      	            	  driver.findElement(By.xpath("//span[@id=\"cartItemCountSpan\"]")).click();
      	            	  driver.findElement(By.name("quantityButtonDown")).click();
-     	            	 // driver.close();
+     	            	 driver.close();
      	               }
               	 
      	       
